@@ -1,1 +1,20 @@
-# Optimize-sql-statement
+# Optimize sql statement
+- Create an index on very large tables (>1.000.000) rows
+- Use EXIST() instead of COUNT() to find an element in the table
+- SELECT fields instead of using SELECT *
+- Avoid Subqueries in WHERE Clause
+- Avoid SELECT DISTINCT where possible
+- Use WHERE Clause instead of HAVING
+- Create joins with INNER JOIN (not WHERE)
+- Use LIMIT to sample query results
+- Use UNION ALL instead of UNION wherever possible
+- Use UNION where instead of WHERE ... or ... query.
+- Run your query during off-peak hours
+- Avoid using OR in join queries
+- Choose GROUP BY over window functions
+- Use derived and temporary tables
+- Drop the index before loading bulk data
+- Use materialized views instead of views
+- Avoid != or <> (not equal) operator
+- Minimize the number of subqueries
+- Try to use INNER join as little as possible when you can get the same output using LEFT/RIGHT join.
